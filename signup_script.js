@@ -19,7 +19,7 @@ $(document).ready(function() {
     const Password = document.getElementById("password");
     const AdmissionYear = document.getElementById("AdmissionYear");
     const Grade = document.getElementById("Grade");
-    const Registerbtn = document("registerbtn");
+    const Registerbtn = document.getElementById("registerbtn");
 
     var gender = "Man";
     var age = 20;
@@ -35,7 +35,7 @@ $(document).ready(function() {
             Grade: Grade
         });
         console.log(user, "You are signed up!!!");
-        //window.location="main.html";
+        window.location="main.html";
     }
 
     //registration event listener

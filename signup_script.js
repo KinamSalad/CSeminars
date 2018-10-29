@@ -35,10 +35,10 @@ $(document).ready(function() {
     }
 
     //registration event listener
-    Registerbtn.addEventListener("click", e => {
-        var email = Email.value;
+    Registerbtn.addEventListener("click", function(event){
+        var email = Email.value
         if (email.indexOf("@") == -1) {
-        email = email + "@CSeminar.com";
+            email = email + "@CSeminar.com";
         }
         const password = Password.value;
 

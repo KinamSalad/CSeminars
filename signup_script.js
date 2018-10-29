@@ -20,12 +20,11 @@ $(document).ready(function() {
     const Grade = document.getElementById("Grade");
     const Registerbtn = document.getElementById("registerbtn");
 
-
     //insertfeeling should be modified to address this issue
 
-    function addUser(user) {
+    function addUser(user, email) {
         usersInfo.push({
-            Email: user.email, // For adding @~
+            Email: email, // For adding @~
             Password: Password,
             AdmissionYear: AdmissionYear,
             Grade: Grade
@@ -47,7 +46,7 @@ $(document).ready(function() {
 
         const promise = auth.createUserWithEmailAndPassword(email, password);
         promise
-            .then(user => addUser(user))
+            .then(user => addUser(user, email))
             .catch(e => console.log(e.message));
     });
 /*

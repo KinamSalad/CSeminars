@@ -36,7 +36,7 @@ $(document).ready(function() {
 
     //registration event listener
     Registerbtn.addEventListener("click", e => {
-        var email = Email.value
+        var email = Email.value;
         if (email.indexOf("@") == -1) {
         email = email + "@CSeminar.com";
         }

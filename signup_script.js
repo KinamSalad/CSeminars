@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     //insertfeeling should be modified to address this issue
 
-    function addUser(user, email, admission, grade) {
+    function addUser(user, email) {
         console.log(Password)
         console.log(AdmissionYear)
         console.log(Grade)
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     //registration event listener
     Registerbtn.addEventListener("click", e=>{
-
+        var email = Email.value
         if (email.indexOf("@") == -1) {
             email = email + "@CSeminar.com";
         }
@@ -49,7 +49,7 @@ $(document).ready(function() {
 
         const promise = auth.createUserWithEmailAndPassword(email, password);
         promise
-            .then(user => addUser(user, email, admission, grade))
+            .then(user => addUser(user, email))
             .catch(e => console.log(e.message));
     });
 /*

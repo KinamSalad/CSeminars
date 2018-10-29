@@ -16,20 +16,16 @@ $(document).ready(function() {
 
     const Email = document.getElementById("email");
     const Password = document.getElementById("password");
-    const AdmissionYear = document.getElementById("AdmissionYear");
-    const Grade = document.getElementById("Grade");
+    const AdmissionYear = document.getElementById("year");
     const Registerbtn = document.getElementById("registerbtn");
-
+    var Grade = "Undergraduate(Junior)"
     //insertfeeling should be modified to address this issue
 
-    function addUser(user, email) {
-        console.log(Password)
-        console.log(AdmissionYear.value)
-        console.log(Grade)
+    function addUser(user, email, password, admissionyear) {
         usersInfo.push({
             Email: email, // For adding @~
-            Password: Password,
-            AdmissionYear: AdmissionYear,
+            Password: password,
+            AdmissionYear: admissionyear,
             Grade: Grade
         });
         console.log(user, "You are signed up!!!");
@@ -43,20 +39,21 @@ $(document).ready(function() {
             email = email + "@CSeminar.com";
         }
         const password = Password.value;
+        const admissionyear = AdmissionYear.value;
 
         const auth = firebase.auth();
         console.log(email, password);
 
         const promise = auth.createUserWithEmailAndPassword(email, password);
         promise
-            .then(user => addUser(user, email))
+            .then(user => addUser(user, email, password, admissionyear))
             .catch(e => console.log(e.message));
     });
-/*
-    $('input[name="age"]', '#ages').on('change', function() {
-        age = $(this).val();
-    });
 
+    $('input[name="grade_group"]', '#Grade').on('change', function() {
+        Grade = $(this).val();
+    });
+/*
 
     $('input[name="gender_group"]', '#genders').on('change', function() {
         if($(this).is(':checked')) {

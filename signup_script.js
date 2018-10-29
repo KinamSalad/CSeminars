@@ -29,7 +29,7 @@ $(document).ready(function() {
             Grade: Grade
         });
         console.log(user, "You are signed up!!!");
-        //window.location="main.html";
+        window.location="main.html";
     }
 
     //registration event listener

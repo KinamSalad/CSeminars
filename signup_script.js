@@ -23,7 +23,9 @@ $(document).ready(function() {
     //insertfeeling should be modified to address this issue
 
     function addUser(user, email, admission, grade) {
-
+        console.log(Password)
+        console.log(AdmissionYear)
+        console.log(Grade)
         usersInfo.push({
             Email: email, // For adding @~
             Password: Password,
@@ -31,14 +33,12 @@ $(document).ready(function() {
             Grade: Grade
         });
         console.log(user, "You are signed up!!!");
-        window.location="main.html";
+        //window.location="main.html";
     }
 
     //registration event listener
     Registerbtn.addEventListener("click", e=>{
-        var email = Email.value
-        var admission = AdmissionYear.value
-        var grade = Grade.value
+
         if (email.indexOf("@") == -1) {
             email = email + "@CSeminar.com";
         }

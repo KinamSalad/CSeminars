@@ -25,9 +25,9 @@ $(document).ready(function() {
     function addUser(user, email) {
         usersInfo.push({
             Email: email, // For adding @~
-            Password: Password,
-            AdmissionYear: AdmissionYear,
-            Grade: Grade
+            Password: Password.value,
+            AdmissionYear: AdmissionYear.value,
+            Grade: Grade.value
         });
         console.log(user, "You are signed up!!!");
         window.location="main.html";

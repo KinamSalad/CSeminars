@@ -24,7 +24,7 @@ $(document).ready(function() {
 
     function addUser(user, email) {
         console.log(Password)
-        console.log(AdmissionYear)
+        console.log(AdmissionYear.value)
         console.log(Grade)
         usersInfo.push({
             Email: email, // For adding @~

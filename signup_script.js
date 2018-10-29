@@ -23,11 +23,14 @@ $(document).ready(function() {
     //insertfeeling should be modified to address this issue
 
     function addUser(user, email) {
+        console.log(Password);
+        console.log(AdmissionYear);
+        console.log(Grade);
         usersInfo.push({
             Email: email, // For adding @~
-            Password: Password.value,
-            AdmissionYear: AdmissionYear.value,
-            Grade: Grade.value
+            Password: Password,
+            AdmissionYear: AdmissionYear,
+            Grade: Grade
         });
         console.log(user, "You are signed up!!!");
         window.location="main.html";
@@ -47,7 +50,7 @@ $(document).ready(function() {
         const promise = auth.createUserWithEmailAndPassword(email, password);
         promise
             .then(user => addUser(user, email))
-            .catch(e => console.log(e.message));
+            .catch(event => console.log(event.message));
     });
 /*
     $('input[name="age"]', '#ages').on('change', function() {

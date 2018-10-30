@@ -6,7 +6,7 @@
 </head>
 
   <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" >
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet" >
 
   <body style="background-color: #f4f5f9">
       <div class="container" style="width: 40%; padding: 40px 30px 20px 30px">
@@ -26,7 +26,7 @@
         </form>
 
 
-        <form id="AdmissionYear" onSubmit="return false;">
+        <form id="Admission Year" onSubmit="return false;">
               <label><b>Admission Year : </b></label>
               <input name="year" type="number" id="year" placeholder="2014" />
         </form>
@@ -34,10 +34,10 @@
         <form id="Grade" onSubmit="return false;" style="margin-bottom: 5%">
               <label><b>Grade : </b></label>
               <br>
-              <input name="grade_group" type="radio" id="Undergraduate(Junior)" checked="true" value="Undergrade(Junior)" />
-              <label for="Undergraduate(Junior)" style="padding-right:5%;">Undergraduate(Junior)</label>
-              <input name="grade_group" type="radio" id="Undergraduate(Senior)" value="Undergrade(Senior)" />
-              <label for="Undergraduate(Senior)">Undergraduate(Senior)</label>
+              <input name="grade_group" type="radio" id="Undergrade(Junior)" checked="true" value="Undergrade(Junior)" />
+              <label for="Undergrade(Junior)" style="padding-right:5%;">Undergrade(Junior)</label>
+              <input name="grade_group" type="radio" id="Undergrade(Senior)" value="Undergrade(Senior)" />
+              <label for="Undergrade(Senior)">Undergrade(Senior)</label>
               <br>
               <input name="grade_group" type="radio" id="MS" value="MS" />
               <label for="MS" style="padding-right:10%;" >MS</label>
@@ -94,9 +94,7 @@
   <br>
   <br>
 
-    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.1/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="signup_script.js"></script>

@@ -47,7 +47,7 @@ $(document).ready(function() {
         const promise = auth.createUserWithEmailAndPassword(email, password);
         promise
             .then(user => addUser(user, email, password, admissionyear))
-            .catch(e => M.toast({html: 'I am a toast!', classes: 'rounded'}));
+            .catch(e => Meterialize.toast({html: 'I am a toast!', classes: 'rounded'}));
             /*.catch(e => console.log(e.message));*/
     });
 

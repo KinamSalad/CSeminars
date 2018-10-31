@@ -7,7 +7,7 @@ $(document).ready(function(){
         storageBucket: "",
         messagingSenderId: "414702609"
     };
-
+    firebase.initializeApp(config);
     var query = firebase.database().ref('users').limitToLast(50);
     console.log(query);
 

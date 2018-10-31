@@ -28,7 +28,8 @@ $(document).ready(function(){
         const promise = auth.signInWithEmailAndPassword(email, password);
         promise
             .then(user => window.location="main.html")
-            .catch(e => console.log(e.message));
+            .catch(e => alert("Not match, Please check your Info"));
+            //.catch(e => console.log(e.message));
     });
 
 });

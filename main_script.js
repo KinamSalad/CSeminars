@@ -8,7 +8,8 @@ $(document).ready(function(){
         messagingSenderId: "414702609"
     };
     firebase.initializeApp(config);
-    var userInfo = database.ref('users');
+
+    var userInfo = firebase.database.ref('users');
     userInfo.on('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();

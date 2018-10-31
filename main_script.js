@@ -8,7 +8,12 @@ $(document).ready(function(){
         messagingSenderId: "414702609"
     };
     firebase.initializeApp(config);
-    var query = firebase.database().ref('users').limitToLast(50);
-    console.log(query);
+    var userInfo = database.ref('users');
+    userInfo.on('value', function(snapshot) {
+        snapshot.forEach(function(childSnapshot) {
+            var childData = childSnapshot.val();
+            console.log(childData);
+        });
+    });
 
 });

@@ -9,7 +9,7 @@ $(document).ready(function(){
     };
     firebase.initializeApp(config);
 
-    var userInfo = firebase.database.ref('users');
+    var userInfo = firebase.database().ref('users');
     userInfo.on('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();

@@ -47,7 +47,7 @@ $(document).ready(function() {
         const promise = auth.createUserWithEmailAndPassword(email, password);
         promise
             .then(user => addUser(user, email, password, admissionyear))
-            .catch(e=> Materialize.toast("Please Check the form and put the valid information",1500));
+            .catch(e=> Materialize.toast("Please Check the form and put the valid information",1000,'rounded'));
             //.catch(e => console.log(e.message));
     });
 

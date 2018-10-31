@@ -28,7 +28,7 @@ $(document).ready(function(){
         const promise = auth.signInWithEmailAndPassword(email, password);
         promise
             .then(user => window.location="main.html")
-            .catch(e=> Materialize.toast("Please Check your Email and Password.",1500));
+            .catch(e=> Materialize.toast("Please Check your Email and Password.",1000, 'rounded'));
             //.catch(e => console.log(e.message));
     });
 

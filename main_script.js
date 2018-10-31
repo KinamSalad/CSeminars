@@ -13,6 +13,7 @@ $(document).ready(function(){
     userInfo.on('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();
+            console.log(childSnapshot.Grade);
             console.log(childData);
         });
     });

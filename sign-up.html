@@ -19,16 +19,22 @@
         </div>
 
         <form onSubmit="return false;">
-          <label><b>Create ID</b></label>
-          <input type="text" placeholder="Create Your ID" name="email" id="email" required>
-          <label><b>Create Password</b></label>
-          <input type="password" placeholder="Create a password that is 6 characters or more" name="psw" id="password" required>
+          <div class="input-field">
+            <input type="text" placeholder="Create Your ID" name="email" id="email" required>
+            <label><b>Create ID</b></label>
+          </div>
+          <div class="input-field">
+            <input type="password" placeholder="Create a password that is 6 characters or more" name="psw" id="password" required>
+            <label><b>Create Password</b></label>
+          </div>
         </form>
 
 
         <form id="Admission Year" onSubmit="return false;">
-              <label><b>Admission Year : </b></label>
-              <input name="year" type="number" id="year" placeholder="2014" />
+          <div class="input-field">
+            <input name="year" type="number" id="year" placeholder="2014" />
+            <label><b>Admission Year : </b></label>
+          </div>
         </form>
 
         <form id="Grade" onSubmit="return false;" style="margin-bottom: 5%">
@@ -46,6 +52,8 @@
               <input name="grade_group" type="radio" id="other_g" value="Other" />
               <label for="other_g">Other</label>
         </form>
+
+        
 
         <!--
         <form id="occupations" onSubmit="return false;">

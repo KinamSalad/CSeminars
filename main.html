@@ -2,16 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sucess to signup!</title>
+    <title>Home</title>
 </head>
-<body>
-<div> "Access to signup!" </div>
+<body style="background-color: #f4f5f9">
+	<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-database.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="main_script.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet" >
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase-database.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script src="main_script.js"></script>
+	<!-- Add Nav usign Materialize -->
+	<nav class="navColor">
+    	<div class="nav-wrapper">
+      		<a href="" class="brand-logo"><img src="Images/logo_white.png" width = "15%" style="margin-left:1%;"/></a>
+      		<ul id="nav-mobile" class="right hide-on-med-and-down">
+	        	<li><a href="main.html">Now..</a></li>
+	        	<li><a href="">Archieve</a></li>
+	        	<li><a href="">My Account</a></li>
+      		</ul>
+    	</div>
+  	</nav>
+
+	<!--<div> "Access to signup!" </div>-->
+	<!-- 수정 필요, 정렬 및 구성 생각 하기 -->
+    <div class="row" >
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="Images/sample_img.jpg">
+            </div>
+            <div class="chip" style="margin-top:10px; margin-left:10px;">#Lottery</div>
+            <div class="chip" style="margin-top:10px; margin-left:5px;">#Seminar</div>
+            <div class="card-content">
+            	<span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn" style="margin-right: 55%;">Participate</a>
+              <a href="#" style="text-align: right; color:#444;">More Info...</a>
+            </div>
+          </div>
+        </div>
+	</div>
+
+    <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="Images/sample_img.jpg">
+            </div>
+            <div class="chip" style="margin-top:10px; margin-left:10px;">#Lottery</div>
+            <div class="chip" style="margin-top:10px; margin-left:5px;">#Seminar</div>
+            <div class="card-content">
+            	<span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a class="waves-effect waves-light btn" style="margin-right: 55%">Participate</a>
+              <a href="#" style="text-align: right;color:#444;">More Info...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div width=100%>
+	<div class="center-div">
+		 <ul class="pagination">
+		    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+		    <li class="active"><a href="#!">1</a></li>
+		    <li class="waves-effect"><a href="#!">2</a></li>
+		    <li class="waves-effect"><a href="#!">3</a></li>
+		    <li class="waves-effect"><a href="#!">4</a></li>
+		    <li class="waves-effect"><a href="#!">5</a></li>
+		    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+		  </ul>
+	</div>
+</div>
+            
+
 </body>
 </html>
+
+<style>
+	.navColor {
+	  background-color: #444 !important;
+	}
+	.center-div {
+		display: table;
+		margin: 0 auto;
+		padding-bottom: 5%;
+	}
+
+	.pagination>li.active>a {
+	  background: #444;
+	  color: #fff;
+	}
+</style>

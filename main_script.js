@@ -18,4 +18,6 @@ $(document).ready(function(){
         });
     });
 
-});
+});G
+
+//$(".button-collapse").sideNav();

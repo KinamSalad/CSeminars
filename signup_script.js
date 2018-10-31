@@ -47,8 +47,8 @@ $(document).ready(function() {
         const promise = auth.createUserWithEmailAndPassword(email, password);
         promise
             .then(user => addUser(user, email, password, admissionyear))
-            /*.catch(e => Materialize.toast({html: 'I am a toast!', classes: 'rounded'}));*/
-            .catch(e => console.log(e.message));
+            .catch(e=> Materialize.toast("Please Check the form and put the valid information",1500));
+            //.catch(e => console.log(e.message));
     });
 
     $('input[name="grade_group"]', '#Grade').on('change', function() {

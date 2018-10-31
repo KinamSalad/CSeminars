@@ -22,6 +22,7 @@ $(document).ready(function(){
         if (email.indexOf("@") == -1) {
             email = email + "@CSeminar.com";
         }
+
         const password = Password.value;
         const auth = firebase.auth();
         const promise = auth.signInWithEmailAndPassword(email, password);

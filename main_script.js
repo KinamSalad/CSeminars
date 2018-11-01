@@ -15,6 +15,8 @@ $(document).ready(function(){
             var childData = childSnapshot.val();
             console.log(childData.Grade);
             console.log(childData);
+            var gradeVar = childData.Grade;
+            $("#name").append(gradeVar); 
         });
     });
 
